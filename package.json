@@ -7,14 +7,14 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "start:server": "node server.js",
-    "dev:server": "SET NODE_ENV=DEVELOPMENT& nodemon server.js",
-    "prod:server": "SET NODE_ENV=PRODUCTION& nodemon server.js",
+    "start": "node server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon server.js",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon server.js",
     "db:seed": "node database/seeders/DatabaseSeeder.js",
-    "dev:client": "vite",
-    "build:client": "vite build",
-    "serve:client": "vite preview",
-    "generate": "node generate.js"
+    "generate": "node app/Console/Command/generate.js",
+    "generate:model": "node app/Console/Command/model.js",
+    "generate:controller": "node app/Console/Command/controller.js",
+    "generate:route": "node app/Console/Command/route.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
