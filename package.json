@@ -1,0 +1,32 @@
+{
+  "name": "mern_zero",
+  "version": "1.0.0",
+  "description": "MERN Zero Level MVC Project",
+  "license": "ISC",
+  "author": "Tejendra Dangaura",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start:server": "node server.js",
+    "dev:server": "SET NODE_ENV=DEVELOPMENT& nodemon server.js",
+    "prod:server": "SET NODE_ENV=PRODUCTION& nodemon server.js",
+    "db:seed": "node database/seeders/DatabaseSeeder.js",
+    "dev:client": "vite",
+    "build:client": "vite build",
+    "serve:client": "vite preview",
+    "generate": "node generate.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.1",
+    "jquery": "^3.7.1",
+    "mongoose": "^8.12.1"
+   
+  }
+}
