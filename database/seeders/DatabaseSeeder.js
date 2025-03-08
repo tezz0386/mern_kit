@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
-const roles = require('../../app/Data/role.json');
-const permissions = require('../../app/Data/permissions');
-const users = require('../../app/Data/user');
+const roles = require('../factories/role.json');
+const permissions = require('../factories/permissions');
+const users = require('../factories/user');
 
 const Role = require('../../app/Models/Role');
 const User = require('../../app/Models/User');
